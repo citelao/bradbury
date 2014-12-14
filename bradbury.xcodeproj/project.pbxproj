@@ -7,10 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3BE6F71A3D78C600B71862 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6F61A3D78C600B71862 /* sfml-audio.framework */; };
+		7E3BE6FD1A3D78D300B71862 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6F81A3D78D300B71862 /* sfml-graphics.framework */; };
+		7E3BE6FE1A3D78D300B71862 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6F91A3D78D300B71862 /* sfml-network.framework */; };
+		7E3BE6FF1A3D78D300B71862 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FA1A3D78D300B71862 /* sfml-system.framework */; };
+		7E3BE7001A3D78D300B71862 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FB1A3D78D300B71862 /* sfml-window.framework */; };
+		7E3BE7011A3D78D300B71862 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FC1A3D78D300B71862 /* SFML.framework */; };
+		7E3BE7181A3D7E7C00B71862 /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE70B1A3D7E6000B71862 /* tests.cpp */; };
+		7E3BE7191A3D7EC200B71862 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6F61A3D78C600B71862 /* sfml-audio.framework */; };
+		7E3BE71A1A3D7EC200B71862 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6F81A3D78D300B71862 /* sfml-graphics.framework */; };
+		7E3BE71B1A3D7EC200B71862 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6F91A3D78D300B71862 /* sfml-network.framework */; };
+		7E3BE71C1A3D7EC200B71862 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FA1A3D78D300B71862 /* sfml-system.framework */; };
+		7E3BE71D1A3D7EC200B71862 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FB1A3D78D300B71862 /* sfml-window.framework */; };
+		7E3BE71E1A3D7EC200B71862 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FC1A3D78D300B71862 /* SFML.framework */; };
+		7E3BE7241A3D80FE00B71862 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE7231A3D80FE00B71862 /* vector.cpp */; };
+		7E3BE7251A3D81A700B71862 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE7231A3D80FE00B71862 /* vector.cpp */; };
 		7E45BBCF1A3D75210096C39F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E45BBCE1A3D75210096C39F /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		7E3BE70F1A3D7E7500B71862 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		7E45BBC91A3D75210096C39F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,24 +47,111 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E3BE6F61A3D78C600B71862 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		7E3BE6F81A3D78D300B71862 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		7E3BE6F91A3D78D300B71862 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
+		7E3BE6FA1A3D78D300B71862 /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../../../../Library/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		7E3BE6FB1A3D78D300B71862 /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../../../Library/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		7E3BE6FC1A3D78D300B71862 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = ../../../../Library/Frameworks/SFML.framework; sourceTree = "<group>"; };
+		7E3BE7071A3D7C8C00B71862 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		7E3BE7091A3D7CA300B71862 /* vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		7E3BE70B1A3D7E6000B71862 /* tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tests.cpp; sourceTree = "<group>"; };
+		7E3BE7111A3D7E7500B71862 /* bradbury tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "bradbury tests"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3BE7201A3D7F5100B71862 /* Catch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Catch.hpp; sourceTree = "<group>"; };
+		7E3BE7211A3D800200B71862 /* vector_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector_test.cpp; sourceTree = "<group>"; };
+		7E3BE7231A3D80FE00B71862 /* vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector.cpp; sourceTree = "<group>"; };
 		7E45BBCB1A3D75210096C39F /* bradbury */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bradbury; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E45BBCE1A3D75210096C39F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E3BE70E1A3D7E7500B71862 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3BE7191A3D7EC200B71862 /* sfml-audio.framework in Frameworks */,
+				7E3BE71A1A3D7EC200B71862 /* sfml-graphics.framework in Frameworks */,
+				7E3BE71B1A3D7EC200B71862 /* sfml-network.framework in Frameworks */,
+				7E3BE71C1A3D7EC200B71862 /* sfml-system.framework in Frameworks */,
+				7E3BE71D1A3D7EC200B71862 /* sfml-window.framework in Frameworks */,
+				7E3BE71E1A3D7EC200B71862 /* SFML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E45BBC81A3D75210096C39F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3BE6F71A3D78C600B71862 /* sfml-audio.framework in Frameworks */,
+				7E3BE6FD1A3D78D300B71862 /* sfml-graphics.framework in Frameworks */,
+				7E3BE6FE1A3D78D300B71862 /* sfml-network.framework in Frameworks */,
+				7E3BE6FF1A3D78D300B71862 /* sfml-system.framework in Frameworks */,
+				7E3BE7001A3D78D300B71862 /* sfml-window.framework in Frameworks */,
+				7E3BE7011A3D78D300B71862 /* SFML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E3BE7041A3D7C8C00B71862 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				7E3BE7051A3D7C8C00B71862 /* math */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		7E3BE7051A3D7C8C00B71862 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				7E3BE7231A3D80FE00B71862 /* vector.cpp */,
+			);
+			path = math;
+			sourceTree = "<group>";
+		};
+		7E3BE7061A3D7C8C00B71862 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				7E3BE7071A3D7C8C00B71862 /* main.h */,
+				7E3BE7081A3D7C8C00B71862 /* math */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		7E3BE7081A3D7C8C00B71862 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				7E3BE7091A3D7CA300B71862 /* vector.h */,
+			);
+			path = math;
+			sourceTree = "<group>";
+		};
+		7E3BE70A1A3D7E6000B71862 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3BE7211A3D800200B71862 /* vector_test.cpp */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		7E3BE71F1A3D7F5100B71862 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7E3BE7201A3D7F5100B71862 /* Catch.hpp */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		7E45BBC21A3D75210096C39F = {
 			isa = PBXGroup;
 			children = (
+				7E3BE6F81A3D78D300B71862 /* sfml-graphics.framework */,
+				7E3BE6F91A3D78D300B71862 /* sfml-network.framework */,
+				7E3BE6FA1A3D78D300B71862 /* sfml-system.framework */,
+				7E3BE6FB1A3D78D300B71862 /* sfml-window.framework */,
+				7E3BE6FC1A3D78D300B71862 /* SFML.framework */,
+				7E3BE6F61A3D78C600B71862 /* sfml-audio.framework */,
 				7E45BBCD1A3D75210096C39F /* bradbury */,
 				7E45BBCC1A3D75210096C39F /* Products */,
 			);
@@ -50,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				7E45BBCB1A3D75210096C39F /* bradbury */,
+				7E3BE7111A3D7E7500B71862 /* bradbury tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +169,12 @@
 		7E45BBCD1A3D75210096C39F /* bradbury */ = {
 			isa = PBXGroup;
 			children = (
+				7E3BE7041A3D7C8C00B71862 /* class */,
+				7E3BE7061A3D7C8C00B71862 /* header */,
 				7E45BBCE1A3D75210096C39F /* main.cpp */,
+				7E3BE70A1A3D7E6000B71862 /* tests */,
+				7E3BE70B1A3D7E6000B71862 /* tests.cpp */,
+				7E3BE71F1A3D7F5100B71862 /* lib */,
 			);
 			path = bradbury;
 			sourceTree = "<group>";
@@ -65,6 +182,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7E3BE7101A3D7E7500B71862 /* bradbury tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3BE7151A3D7E7500B71862 /* Build configuration list for PBXNativeTarget "bradbury tests" */;
+			buildPhases = (
+				7E3BE70D1A3D7E7500B71862 /* Sources */,
+				7E3BE70E1A3D7E7500B71862 /* Frameworks */,
+				7E3BE70F1A3D7E7500B71862 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bradbury tests";
+			productName = "bradbury tests";
+			productReference = 7E3BE7111A3D7E7500B71862 /* bradbury tests */;
+			productType = "com.apple.product-type.tool";
+		};
 		7E45BBCA1A3D75210096C39F /* bradbury */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E45BBD21A3D75210096C39F /* Build configuration list for PBXNativeTarget "bradbury" */;
@@ -91,6 +225,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = citelao;
 				TargetAttributes = {
+					7E3BE7101A3D7E7500B71862 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					7E45BBCA1A3D75210096C39F = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -109,22 +246,59 @@
 			projectRoot = "";
 			targets = (
 				7E45BBCA1A3D75210096C39F /* bradbury */,
+				7E3BE7101A3D7E7500B71862 /* bradbury tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E3BE70D1A3D7E7500B71862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3BE7251A3D81A700B71862 /* vector.cpp in Sources */,
+				7E3BE7181A3D7E7C00B71862 /* tests.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E45BBC71A3D75210096C39F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7E45BBCF1A3D75210096C39F /* main.cpp in Sources */,
+				7E3BE7241A3D80FE00B71862 /* vector.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		7E3BE7161A3D7E7500B71862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E3BE7171A3D7E7500B71862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		7E45BBD01A3D75210096C39F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -202,6 +376,10 @@
 		7E45BBD31A3D75210096C39F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +387,10 @@
 		7E45BBD41A3D75210096C39F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -216,6 +398,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E3BE7151A3D7E7500B71862 /* Build configuration list for PBXNativeTarget "bradbury tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3BE7161A3D7E7500B71862 /* Debug */,
+				7E3BE7171A3D7E7500B71862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7E45BBC61A3D75210096C39F /* Build configuration list for PBXProject "bradbury" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -232,6 +422,7 @@
 				7E45BBD41A3D75210096C39F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
