@@ -20,10 +20,20 @@
 		7E3BE71C1A3D7EC200B71862 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FA1A3D78D300B71862 /* sfml-system.framework */; };
 		7E3BE71D1A3D7EC200B71862 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FB1A3D78D300B71862 /* sfml-window.framework */; };
 		7E3BE71E1A3D7EC200B71862 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3BE6FC1A3D78D300B71862 /* SFML.framework */; };
-		7E3BE7241A3D80FE00B71862 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE7231A3D80FE00B71862 /* vector.cpp */; };
-		7E3BE7251A3D81A700B71862 /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE7231A3D80FE00B71862 /* vector.cpp */; };
-		7E45BBCF1A3D75210096C39F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E45BBCE1A3D75210096C39F /* main.cpp */; };
+		7EBD20CB1A3E13E200511FEE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E45BBCE1A3D75210096C39F /* main.cpp */; };
+		7EBD20CC1A3E144300511FEE /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE7231A3D80FE00B71862 /* vector.cpp */; };
+		7EBD20D21A3E156D00511FEE /* vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E3BE7231A3D80FE00B71862 /* vector.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EBD20D01A3E153400511FEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E45BBC31A3D75210096C39F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E45BBCA1A3D75210096C39F;
+			remoteInfo = bradbury;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7E3BE70F1A3D7E7500B71862 /* CopyFiles */ = {
@@ -193,6 +203,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7EBD20D11A3E153400511FEE /* PBXTargetDependency */,
 			);
 			name = "bradbury tests";
 			productName = "bradbury tests";
@@ -256,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3BE7251A3D81A700B71862 /* vector.cpp in Sources */,
+				7EBD20D21A3E156D00511FEE /* vector.cpp in Sources */,
 				7E3BE7181A3D7E7C00B71862 /* tests.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,12 +276,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E45BBCF1A3D75210096C39F /* main.cpp in Sources */,
-				7E3BE7241A3D80FE00B71862 /* vector.cpp in Sources */,
+				7EBD20CC1A3E144300511FEE /* vector.cpp in Sources */,
+				7EBD20CB1A3E13E200511FEE /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EBD20D11A3E153400511FEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E45BBCA1A3D75210096C39F /* bradbury */;
+			targetProxy = 7EBD20D01A3E153400511FEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7E3BE7161A3D7E7500B71862 /* Debug */ = {
@@ -405,6 +424,7 @@
 				7E3BE7171A3D7E7500B71862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E45BBC61A3D75210096C39F /* Build configuration list for PBXProject "bradbury" */ = {
 			isa = XCConfigurationList;
