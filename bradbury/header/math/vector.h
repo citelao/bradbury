@@ -2,7 +2,8 @@
 //  vector.h
 //  bradbury
 //
-//  An immutable, arbitrary length vector, designed for doubles, with typical matrix operations.
+//  An immutable, arbitrary length vector, designed for doubles, with typical
+//  matrix operations.
 //
 //  Created by Ben Stolovitz on 12/14/14.
 //  Copyright (c) 2014 citelao. All rights reserved.
@@ -30,6 +31,8 @@ public:
     };
     
     // Copy constructors
+    // TODO: This first specialization could be removed. It would leave a compile-
+    // time error instead of a run-time one.
     template <size_t E>
     Vector(Vector<E> const &vector) {
         throw std::length_error("Cannot initalize vector of size " + std::to_string(E) + " for dimension " + std::to_string(D));
@@ -101,6 +104,9 @@ public:
         }
         
         return (*this)[3];
+    }
+    const double w() const {
+        return t();
     }
     
 //    double magnitude() const;
@@ -176,8 +182,7 @@ public:
         return Vector(x() / d,
                       y() / d,
                       z() / d);
-    }
-;
+    };
     
 protected:
     std::vector<double> _components;

@@ -91,6 +91,7 @@ TEST_CASE("vectors can be created with proper stats", "[vector]") {
             REQUIRE(v.y() == v[1]);
             REQUIRE(v.z() == v[2]);
             REQUIRE(v.t() == v[3]);
+            REQUIRE(v.w() == v[3]);
             
             REQUIRE_THROWS_AS(v[4], std::out_of_range);
             
@@ -98,6 +99,7 @@ TEST_CASE("vectors can be created with proper stats", "[vector]") {
             REQUIRE(v.y() == 6);
             REQUIRE(v.z() == 10);
             REQUIRE(v.t() == 12);
+            REQUIRE(v.w() == 12);
         }
         
         Vector<1> v = {0};
@@ -107,6 +109,7 @@ TEST_CASE("vectors can be created with proper stats", "[vector]") {
         REQUIRE_THROWS_AS(v.y(), std::out_of_range);
         REQUIRE_THROWS_AS(v.z(), std::out_of_range);
         REQUIRE_THROWS_AS(v.t(), std::out_of_range);
+        REQUIRE_THROWS_AS(v.w(), std::out_of_range);
     }
     
     SECTION("dynamic example access") {
@@ -115,6 +118,7 @@ TEST_CASE("vectors can be created with proper stats", "[vector]") {
             REQUIRE(v.y() == v[1]);
             REQUIRE(v.z() == v[2]);
             REQUIRE(v.t() == v[3]);
+            REQUIRE(v.w() == v[3]);
             
             REQUIRE_THROWS_AS(v[4], std::out_of_range);
             
@@ -122,6 +126,7 @@ TEST_CASE("vectors can be created with proper stats", "[vector]") {
             REQUIRE(v.y() == dy);
             REQUIRE(v.z() == dz);
             REQUIRE(v.t() == dt);
+            REQUIRE(v.w() == dt);
         }
     }
 
